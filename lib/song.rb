@@ -40,11 +40,22 @@ class Song
     
     gcount = {}
     
-    @@genres.uniq.each do |genre|
+    @@genres.each do |genre|
       
+      if gcount[genre] == nil 
+        
+        gcount[genre] = 1
+      
+      else
+        
+        gcount[genre] += 1
+        
+      end
       
       
     end
+    
+    gcount
     
   end
   
