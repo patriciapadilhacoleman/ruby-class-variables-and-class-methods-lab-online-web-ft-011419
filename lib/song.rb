@@ -42,7 +42,7 @@ class Song
     
     @@genres.uniq.each do |genre|
       
-      gcount[genre]
+      
       
     end
     
